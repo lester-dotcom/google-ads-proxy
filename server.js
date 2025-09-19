@@ -59,7 +59,7 @@ app.post('/api/google-ads-proxy', async (req, res) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`✅ Proxy server running on http://localhost:${PORT}`);
+  console.log(`✅ Proxy server running on http://0.0.0.0:${PORT}`);
   console.log('🔗 Dashboard can now make real API calls through this proxy');
   console.log('🌐 CORS enabled for external access');
 });
